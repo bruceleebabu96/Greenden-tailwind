@@ -20,7 +20,7 @@
     <!-- Responsive nav bar -->
     <nav class="bg-green-300 flex justify-between p-3 shadow-xl items-center sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
-        <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        <div><svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-6 md:hidden">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
@@ -31,54 +31,66 @@
             <li><a class="hover:underline hover:text-black" href="contact.html">contact</a></li>
         </ul>
     </nav>
+    <!-- Side nav bar -->
+    <section id="sidenav" class="bg-green-300 w-3/6 fixed z-20 top-0 p-5 text-center flex flex-col gap-5 transition-all duration-1000"
+        style="height: 100vh; right: -50%;">
+        <div class="text-right">
+            <p id="navClose" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex gap-5 text-gray-600 flex flex-col z-10">
+            <li><a class="hover:underline hover:text-black" href="index.html">home</a></li>
+            <li><a class="hover:underline hover:text-black" href="product.html">product</a></li>
+            <li><a class="hover:underline hover:text-black" href="contact.html">contact</a></li>
+        </ul>
+    </section>
     <!-- Product list -->
     <section class="text-center p-10">
         <h1 class="text-3xl font-bold mt-5">Our Products</h1>
-        <input class="border border-gray-500 w-3/4 mt-10 p-2 md:p-4" type="text" placeholder="Search for a product...">
-        <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <input id="search" class="border border-gray-500 w-3/4 mt-10 p-2 md:p-4" type="text" placeholder="Search for a product...">
+        <div id="product-container" class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3">
         <div>
             <img src="./images/product1.jpg" class="inline" alt="">
-            <p>New plant</p>
+            <h1>Yellow flower</h1>
             <p>20$</p>
         </div>
         <div>
             <img src="./images/product2.jpg" class="inline" alt="">
-            <p>New plant</p>
+            <h1>pink flower</h1>
             <p>20$</p>
         </div>
         <div>
             <img src="./images/product3.jpg" class="inline" alt="">
-            <p>New plant</p>
+            <h1>rose flower</h1>
             <p>20$</p>
         </div>
         <div>
             <img src="./images/product4.jpg" class="inline" alt="">
-            <p>New plant</p>
+            <h1>red flower</h1>
             <p>20$</p>
         </div>
         <div>
             <img src="./images/product5.jpg" class="inline" alt="">
-            <p>New plant</p>
+            <h1>rose flower</h1>
             <p>20$</p>
         </div>
         <div>
             <img src="./images/product6.jpg" class="inline" alt="">
-            <p>New plant</p>
+            <h1>pink plant</h1>
             <p>20$</p>
         </div>
         <div>
             <img src="./images/product7.jpg" class="inline" alt="">
-            <p>New plant</p>
+            <h1>violet plant</h1>
             <p>20$</p>
         </div>
         <div>
             <img src="./images/product8.jpg" class="inline" alt="">
-            <p>New plant</p>
+            <h1>red rose plant</h1>
             <p>20$</p>
         </div>
     </div> 
     </section>
-
+    <script src="./index.js"></script>
 </body>
 
 </html>
